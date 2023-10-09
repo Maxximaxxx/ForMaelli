@@ -14,6 +14,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            position: relative; /* Add this to position the GIF */
         }
 
         #question {
@@ -70,6 +71,12 @@
                 width: 100%; /* Make buttons full-width on smaller screens */
             }
         }
+        #gif {
+            position: absolute;
+            bottom: 10px; /* Adjust the position as needed */
+            left: 10px; /* Adjust the position as needed */
+            max-width: 250px; /* Adjust the size as needed */
+        }
     </style>
 </head>
 <body>
@@ -82,5 +89,7 @@
             <a href="second.html">No</a>
         </button>
     </div>
+
+    <img id="gif" src="Hello kitty.gif" alt="GIF">
 </body>
 </html>
